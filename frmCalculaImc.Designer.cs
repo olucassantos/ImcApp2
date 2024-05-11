@@ -35,6 +35,7 @@
             label2 = new Label();
             label3 = new Label();
             panel1 = new Panel();
+            btnAbreTela = new Button();
             lblResultado = new Label();
             panel2 = new Panel();
             lblSeta = new Label();
@@ -106,6 +107,7 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(btnAbreTela);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -116,6 +118,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(360, 544);
             panel1.TabIndex = 5;
+            // 
+            // btnAbreTela
+            // 
+            btnAbreTela.Location = new Point(7, 500);
+            btnAbreTela.Name = "btnAbreTela";
+            btnAbreTela.Size = new Size(344, 34);
+            btnAbreTela.TabIndex = 5;
+            btnAbreTela.Text = "Abrir Tela";
+            btnAbreTela.UseVisualStyleBackColor = true;
+            btnAbreTela.Click += btnAbreTela_Click;
             // 
             // lblResultado
             // 
@@ -164,7 +176,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(955, 543);
+            ClientSize = new Size(361, 543);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "frmCalculaImc";
@@ -192,5 +204,6 @@
         private Panel panel2;
         private PictureBox pictureBox1;
         private Label lblSeta;
+        private Button btnAbreTela;
     }
 }
